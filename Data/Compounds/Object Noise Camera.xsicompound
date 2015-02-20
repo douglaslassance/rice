@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="Object Noise Camera" category="Rice" author="Douglas Lassance" url="http://www.douglaslassance.com" formatversion="1.4" compoundversion="1.0" constructionmode="Simulation" backgroundcolor="6672345">
+	<definition>
+		<nodes>
+			<node type="Set Data" version="1.0" index="0">
+				<param name="Reference" type="31" value=""></param>
+				<param name="Value.Value_00" type="4" value="1.000000"></param>
+				<param name="Value.Value_01" type="4" value="0.000000"></param>
+				<param name="Value.Value_02" type="4" value="0.000000"></param>
+				<param name="Value.Value_03" type="4" value="0.000000"></param>
+				<param name="Value.Value_10" type="4" value="0.000000"></param>
+				<param name="Value.Value_11" type="4" value="1.000000"></param>
+				<param name="Value.Value_12" type="4" value="0.000000"></param>
+				<param name="Value.Value_13" type="4" value="0.000000"></param>
+				<param name="Value.Value_20" type="4" value="0.000000"></param>
+				<param name="Value.Value_21" type="4" value="0.000000"></param>
+				<param name="Value.Value_22" type="4" value="1.000000"></param>
+				<param name="Value.Value_23" type="4" value="0.000000"></param>
+				<param name="Value.Value_30" type="4" value="0.000000"></param>
+				<param name="Value.Value_31" type="4" value="0.000000"></param>
+				<param name="Value.Value_32" type="4" value="0.000000"></param>
+				<param name="Value.Value_33" type="4" value="1.000000"></param>
+				<param_ext name="Reference" type="31" value=""></param_ext>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Value" type="256" structure="1" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">473</prop>
+					<prop name="posy">441</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Matrix Noise Camera" version="1.0" index="1">
+				<param name="Input.Input_00" type="4" value="1.000000"></param>
+				<param name="Input.Input_01" type="4" value="0.000000"></param>
+				<param name="Input.Input_02" type="4" value="0.000000"></param>
+				<param name="Input.Input_03" type="4" value="0.000000"></param>
+				<param name="Input.Input_10" type="4" value="0.000000"></param>
+				<param name="Input.Input_11" type="4" value="1.000000"></param>
+				<param name="Input.Input_12" type="4" value="0.000000"></param>
+				<param name="Input.Input_13" type="4" value="0.000000"></param>
+				<param name="Input.Input_20" type="4" value="0.000000"></param>
+				<param name="Input.Input_21" type="4" value="0.000000"></param>
+				<param name="Input.Input_22" type="4" value="1.000000"></param>
+				<param name="Input.Input_23" type="4" value="0.000000"></param>
+				<param name="Input.Input_30" type="4" value="0.000000"></param>
+				<param name="Input.Input_31" type="4" value="0.000000"></param>
+				<param name="Input.Input_32" type="4" value="0.000000"></param>
+				<param name="Input.Input_33" type="4" value="1.000000"></param>
+				<param name="Rotation_Enable" type="11" value="true"></param>
+				<param name="Pan_Amplitude" type="4" value="1.000000"></param>
+				<param name="Roll_Amplitude" type="4" value="1.000000"></param>
+				<param name="Rotation_Frequency" type="4" value="1.000000"></param>
+				<param name="Rotation_Seed" type="3" value="123456"></param>
+				<param name="Position_Enable" type="11" value="true"></param>
+				<param name="Track_Amplitude" type="4" value="1.000000"></param>
+				<param name="Position_Frequency" type="4" value="1.000000"></param>
+				<param name="Position_Seed" type="3" value="123456"></param>
+				<portdef name="Position_Enable" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Roll_Amplitude" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Position_Seed" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Pan_Amplitude" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Position_Frequency" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Rotation_Seed" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Track_Amplitude" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Rotation_Frequency" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Rotation_Enable" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Input" type="256" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">252</prop>
+					<prop name="posy">428</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="2">
+				<param name="reference" type="31" value=""></param>
+				<param_ext name="reference" type="31" value=""></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">-90</prop>
+					<prop name="posy">475</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="3">
+				<param name="reference" type="31" value="kine.global"></param>
+				<param_ext name="reference" type="31" value="kine.global"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">82</prop>
+					<prop name="posy">443</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="Execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+			<port index="1" portname="Rotation_Enable" username="Rotation_Enable" basename="Rotation Enable" portlabel="Rotation Enable" exposetype="single"> </port>
+			<port index="1" portname="Pan_Amplitude" username="Pan_Amplitude" basename="Pan Amplitude" portlabel="Pan Amplitude" exposetype="single"> </port>
+			<port index="1" portname="Roll_Amplitude" username="Roll_Amplitude" basename="Roll Amplitude" portlabel="Roll Amplitude" exposetype="single"> </port>
+			<port index="1" portname="Rotation_Frequency" username="Rotation_Frequency" basename="Rotation Frequency" portlabel="Rotation Frequency" exposetype="single"> </port>
+			<port index="1" portname="Rotation_Seed" username="Rotation_Seed" basename="Rotation Seed" portlabel="Rotation Seed" exposetype="single"> </port>
+			<port index="1" portname="Position_Enable" username="Position_Enable" basename="Position Enable" portlabel="Position Enable" exposetype="single"> </port>
+			<port index="1" portname="Track_Amplitude" username="Track_Amplitude" basename="Track Amplitude" portlabel="Track Amplitude" exposetype="single"> </port>
+			<port index="1" portname="Position_Frequency" username="Position_Frequency" basename="Position Frequency" portlabel="Position Frequency" exposetype="single"> </port>
+			<port index="1" portname="Position_Seed" username="Position_Seed" basename="Position Seed" portlabel="Position Seed" exposetype="single"> </port>
+			<port index="2" portname="inname" username="Input" basename="Input" portlabel="Input" exposetype="single"> </port>
+			<port index="2" portname="reference" username="Input_Reference" basename="Input Reference" portlabel="Input Reference" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="3" from_port="value" to_node="1" to_port="Input"> </cnx>
+			<cnx from_node="3" from_port="outname" to_node="0" to_port="In_Name"> </cnx>
+			<cnx from_node="2" from_port="outname" to_node="3" to_port="inname"> </cnx>
+			<cnx from_node="1" from_port="Result" to_node="0" to_port="Value"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Input"> </item>
+			<item type="input" name="Input_Reference"> </item>
+			<group type="input" name="Rotation" collapsed="false">
+				<item type="input" name="Rotation_Enable" min="0" max="0"> </item>
+				<item type="input" name="Pan_Amplitude" min="0" max="0"> </item>
+				<item type="input" name="Roll_Amplitude" min="0" max="0"> </item>
+				<item type="input" name="Rotation_Frequency" min="0" max="0"> </item>
+				<item type="input" name="Rotation_Seed" min="0" max="0"> </item>
+			</group>
+			<group type="input" name="Position" collapsed="false">
+				<item type="input" name="Position_Enable" min="0" max="0"> </item>
+				<item type="input" name="Track_Amplitude" min="0" max="0"> </item>
+				<item type="input" name="Position_Frequency" min="0" max="0"> </item>
+				<item type="input" name="Position_Seed" min="0" max="0"> </item>
+			</group>
+			<item type="output" name="Execute"> </item>
+		</layout>
+	</definition>
+</xsi_file>

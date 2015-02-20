@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="Object Custom" category="Rice" author="Douglas Lassance" url="http://www.douglaslassance.com" formatversion="1.4" compoundversion="1.0" backgroundcolor="6672345">
+	<definition>
+		<nodes>
+			<node type="Matrix Custom" version="1.0" index="0">
+				<param name="Input.Input_00" type="4" value="1.000000"></param>
+				<param name="Input.Input_01" type="4" value="0.000000"></param>
+				<param name="Input.Input_02" type="4" value="0.000000"></param>
+				<param name="Input.Input_03" type="4" value="0.000000"></param>
+				<param name="Input.Input_10" type="4" value="0.000000"></param>
+				<param name="Input.Input_11" type="4" value="1.000000"></param>
+				<param name="Input.Input_12" type="4" value="0.000000"></param>
+				<param name="Input.Input_13" type="4" value="0.000000"></param>
+				<param name="Input.Input_20" type="4" value="0.000000"></param>
+				<param name="Input.Input_21" type="4" value="0.000000"></param>
+				<param name="Input.Input_22" type="4" value="1.000000"></param>
+				<param name="Input.Input_23" type="4" value="0.000000"></param>
+				<param name="Input.Input_30" type="4" value="0.000000"></param>
+				<param name="Input.Input_31" type="4" value="0.000000"></param>
+				<param name="Input.Input_32" type="4" value="0.000000"></param>
+				<param name="Input.Input_33" type="4" value="1.000000"></param>
+				<param name="Custom.Custom_00" type="4" value="1.000000"></param>
+				<param name="Custom.Custom_01" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_02" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_03" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_10" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_11" type="4" value="1.000000"></param>
+				<param name="Custom.Custom_12" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_13" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_20" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_21" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_22" type="4" value="1.000000"></param>
+				<param name="Custom.Custom_23" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_30" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_31" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_32" type="4" value="0.000000"></param>
+				<param name="Custom.Custom_33" type="4" value="1.000000"></param>
+				<portdef name="Custom" type="256" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Input" type="256" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">421</prop>
+					<prop name="posy">1081</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="GetDataNode" index="1">
+				<param name="reference" type="31" value="kine.global"></param>
+				<param_ext name="reference" type="31" value="kine.global"></param_ext>
+				<portdef name="source" type="2048" structure="1" group="1" instance="0" port="0"></portdef>
+				<portdef name="inname" type="8192" structure="1" group="3" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">249</prop>
+					<prop name="posy">1081</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Set Data" version="1.0" index="2">
+				<param name="Reference" type="31" value=""></param>
+				<param name="Value.Value_00" type="4" value="1.000000"></param>
+				<param name="Value.Value_01" type="4" value="0.000000"></param>
+				<param name="Value.Value_02" type="4" value="0.000000"></param>
+				<param name="Value.Value_03" type="4" value="0.000000"></param>
+				<param name="Value.Value_10" type="4" value="0.000000"></param>
+				<param name="Value.Value_11" type="4" value="1.000000"></param>
+				<param name="Value.Value_12" type="4" value="0.000000"></param>
+				<param name="Value.Value_13" type="4" value="0.000000"></param>
+				<param name="Value.Value_20" type="4" value="0.000000"></param>
+				<param name="Value.Value_21" type="4" value="0.000000"></param>
+				<param name="Value.Value_22" type="4" value="1.000000"></param>
+				<param name="Value.Value_23" type="4" value="0.000000"></param>
+				<param name="Value.Value_30" type="4" value="0.000000"></param>
+				<param name="Value.Value_31" type="4" value="0.000000"></param>
+				<param name="Value.Value_32" type="4" value="0.000000"></param>
+				<param name="Value.Value_33" type="4" value="1.000000"></param>
+				<param_ext name="Reference" type="31" value=""></param_ext>
+				<portdef name="In_Name" type="8192" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Value" type="256" structure="1" group="2" instance="0" port="0" groupname="Value"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">588</prop>
+					<prop name="posy">1081</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="Custom" username="Custom" basename="Custom" portlabel="Custom" exposetype="single"> </port>
+			<port index="1" portname="inname" username="Input" basename="Input" portlabel="Input" exposetype="single"> </port>
+			<port index="2" portname="Execute" username="Execute" basename="Execute" portlabel="Execute" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="1" from_port="value" to_node="0" to_port="Input"> </cnx>
+			<cnx from_node="1" from_port="outname" to_node="2" to_port="In_Name"> </cnx>
+			<cnx from_node="0" from_port="Result" to_node="2" to_port="Value"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Input"> </item>
+			<item type="input" name="Custom"> </item>
+			<item type="output" name="Execute"> </item>
+		</layout>
+	</definition>
+</xsi_file>

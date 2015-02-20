@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="Matrix Noise" category="Rice" tasks="" author="Douglas Lassance" url="http://www.douglaslassance.com" formatversion="1.4" compoundversion="1.0" constructionmode="Animation" backgroundcolor="6672345">
+	<definition>
+		<nodes>
+			<node type="Vector Noise" version="1.0" index="0">
+				<param name="Value.Value_x" type="4" value="0.000000"></param>
+				<param name="Value.Value_y" type="4" value="0.000000"></param>
+				<param name="Value.Value_z" type="4" value="0.000000"></param>
+				<param name="Enable" type="11" value="true"></param>
+				<param name="Amplitude_X" type="4" value="1.000000"></param>
+				<param name="Amplitude_Y" type="4" value="1.000000"></param>
+				<param name="Amplitude_Z" type="4" value="1.000000"></param>
+				<param name="Frequency" type="4" value="1.000000"></param>
+				<param name="Seed" type="3" value="123456"></param>
+				<portdef name="Value" type="16" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Amplitude_X" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Frequency" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Amplitude_Y" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Seed" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Enable" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Amplitude_Z" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">275</prop>
+					<prop name="posy">330</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="PassThroughNode" index="1">
+				<param name="in.in_00" type="4" value="1.000000"></param>
+				<param name="in.in_01" type="4" value="0.000000"></param>
+				<param name="in.in_02" type="4" value="0.000000"></param>
+				<param name="in.in_03" type="4" value="0.000000"></param>
+				<param name="in.in_10" type="4" value="0.000000"></param>
+				<param name="in.in_11" type="4" value="1.000000"></param>
+				<param name="in.in_12" type="4" value="0.000000"></param>
+				<param name="in.in_13" type="4" value="0.000000"></param>
+				<param name="in.in_20" type="4" value="0.000000"></param>
+				<param name="in.in_21" type="4" value="0.000000"></param>
+				<param name="in.in_22" type="4" value="1.000000"></param>
+				<param name="in.in_23" type="4" value="0.000000"></param>
+				<param name="in.in_30" type="4" value="0.000000"></param>
+				<param name="in.in_31" type="4" value="0.000000"></param>
+				<param name="in.in_32" type="4" value="0.000000"></param>
+				<param name="in.in_33" type="4" value="1.000000"></param>
+				<portdef name="in" type="256" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="passthrough">
+					<prop name="private">true</prop>
+				</datablob>
+				<datablob category="ui_infos">
+					<prop name="posx">614</prop>
+					<prop name="posy">708</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="MultiplyNode" index="2">
+				<param name="value1.value1_00" type="4" value="1.000000"></param>
+				<param name="value1.value1_01" type="4" value="0.000000"></param>
+				<param name="value1.value1_02" type="4" value="0.000000"></param>
+				<param name="value1.value1_03" type="4" value="0.000000"></param>
+				<param name="value1.value1_10" type="4" value="0.000000"></param>
+				<param name="value1.value1_11" type="4" value="1.000000"></param>
+				<param name="value1.value1_12" type="4" value="0.000000"></param>
+				<param name="value1.value1_13" type="4" value="0.000000"></param>
+				<param name="value1.value1_20" type="4" value="0.000000"></param>
+				<param name="value1.value1_21" type="4" value="0.000000"></param>
+				<param name="value1.value1_22" type="4" value="1.000000"></param>
+				<param name="value1.value1_23" type="4" value="0.000000"></param>
+				<param name="value1.value1_30" type="4" value="0.000000"></param>
+				<param name="value1.value1_31" type="4" value="0.000000"></param>
+				<param name="value1.value1_32" type="4" value="0.000000"></param>
+				<param name="value1.value1_33" type="4" value="1.000000"></param>
+				<param name="value2.value2_00" type="4" value="1.000000"></param>
+				<param name="value2.value2_01" type="4" value="0.000000"></param>
+				<param name="value2.value2_02" type="4" value="0.000000"></param>
+				<param name="value2.value2_03" type="4" value="0.000000"></param>
+				<param name="value2.value2_10" type="4" value="0.000000"></param>
+				<param name="value2.value2_11" type="4" value="1.000000"></param>
+				<param name="value2.value2_12" type="4" value="0.000000"></param>
+				<param name="value2.value2_13" type="4" value="0.000000"></param>
+				<param name="value2.value2_20" type="4" value="0.000000"></param>
+				<param name="value2.value2_21" type="4" value="0.000000"></param>
+				<param name="value2.value2_22" type="4" value="1.000000"></param>
+				<param name="value2.value2_23" type="4" value="0.000000"></param>
+				<param name="value2.value2_30" type="4" value="0.000000"></param>
+				<param name="value2.value2_31" type="4" value="0.000000"></param>
+				<param name="value2.value2_32" type="4" value="0.000000"></param>
+				<param name="value2.value2_33" type="4" value="1.000000"></param>
+				<portdef name="value1" type="256" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="value2" type="256" structure="1" group="0" instance="1" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">774</prop>
+					<prop name="posy">566</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="SRTToMatrixNode" index="4">
+				<param name="scaling.scaling_x" type="4" value="1.000000"></param>
+				<param name="scaling.scaling_y" type="4" value="1.000000"></param>
+				<param name="scaling.scaling_z" type="4" value="1.000000"></param>
+				<param name="rotation.rotation_x" type="4" value="1.000000"></param>
+				<param name="rotation.rotation_y" type="4" value="0.000000"></param>
+				<param name="rotation.rotation_z" type="4" value="0.000000"></param>
+				<param name="rotation.rotation_angle" type="4" value="0.000000"></param>
+				<param name="translation.translation_x" type="4" value="0.000000"></param>
+				<param name="translation.translation_y" type="4" value="0.000000"></param>
+				<param name="translation.translation_z" type="4" value="0.000000"></param>
+				<portdef name="scaling" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<portdef name="rotation" type="16384" structure="1" group="0" instance="0" port="1"></portdef>
+				<portdef name="translation" type="16" structure="1" group="0" instance="0" port="2"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">612</prop>
+					<prop name="posy">456</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="EulerToRotationNode" index="5">
+				<param name="rotationorder" type="3" value="0"></param>
+				<param name="rotationxyz.rotationxyz_x" type="4" value="0.000000"></param>
+				<param name="rotationxyz.rotationxyz_y" type="4" value="0.000000"></param>
+				<param name="rotationxyz.rotationxyz_z" type="4" value="0.000000"></param>
+				<portdef name="rotationxyz" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">428</prop>
+					<prop name="posy">330</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="Vector Noise" version="1.0" index="7">
+				<param name="Value.Value_x" type="4" value="0.000000"></param>
+				<param name="Value.Value_y" type="4" value="0.000000"></param>
+				<param name="Value.Value_z" type="4" value="0.000000"></param>
+				<param name="Enable" type="11" value="true"></param>
+				<param name="Amplitude_X" type="4" value="1.000000"></param>
+				<param name="Amplitude_Y" type="4" value="1.000000"></param>
+				<param name="Amplitude_Z" type="4" value="1.000000"></param>
+				<param name="Frequency" type="4" value="1.000000"></param>
+				<param name="Seed" type="3" value="123456"></param>
+				<portdef name="Enable" type="1" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Amplitude_Y" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Amplitude_Z" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Value" type="16" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Seed" type="2" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Frequency" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Amplitude_X" type="4" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">459</prop>
+					<prop name="posy">519</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="Enable" username="Rotation_Enable" basename="Rotation Enable" portlabel="Rotation Enable" exposetype="single"> </port>
+			<port index="0" portname="Amplitude_Z" username="Rotation_Amplitude_Z" basename="Rotation Amplitude Z" portlabel="Rotation Amplitude Z" exposetype="single"> </port>
+			<port index="0" portname="Frequency" username="Rotation_Frequency" basename="Rotation Frequency" portlabel="Rotation Frequency" exposetype="single"> </port>
+			<port index="0" portname="Seed" username="Rotation_Seed" basename="Rotation Seed" portlabel="Rotation Seed" exposetype="single"> </port>
+			<port index="0" portname="Amplitude_Y" username="Rotation_Amplitude_Y" basename="Rotation Amplitude Y" portlabel="Rotation Amplitude Y" exposetype="single"> </port>
+			<port index="0" portname="Amplitude_X" username="Rotation_Amplitude_X" basename="Rotation Amplitude X" portlabel="Rotation Amplitude X" exposetype="single"> </port>
+			<port index="1" portname="in" username="Input" basename="Input" portlabel="Input" exposetype="single"> </port>
+			<port index="2" portname="result" username="Result" basename="Result" portlabel="Result" exposetype="single"> </port>
+			<port index="7" portname="Enable" username="Position_Enable" basename="Position Enable" portlabel="Position Enable" exposetype="single"> </port>
+			<port index="7" portname="Frequency" username="Position_Frequency" basename="Position Frequency" portlabel="Position Frequency" exposetype="single"> </port>
+			<port index="7" portname="Seed" username="Position_Seed" basename="Position Seed" portlabel="Position Seed" exposetype="single"> </port>
+			<port index="7" portname="Amplitude_Z" username="Position_Amplitude_Z" basename="Position Amplitude Z" portlabel="Position Amplitude Z" exposetype="single"> </port>
+			<port index="7" portname="Amplitude_Y" username="Position_Amplitude_Y" basename="Position Amplitude Y" portlabel="Position Amplitude Y" exposetype="single"> </port>
+			<port index="7" portname="Amplitude_X" username="Position_Amplitude_X" basename="Position Amplitude X" portlabel="Position Amplitude X" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="7" from_port="Result" to_node="4" to_port="translation"> </cnx>
+			<cnx from_node="0" from_port="Result" to_node="5" to_port="rotationxyz"> </cnx>
+			<cnx from_node="5" from_port="rotation" to_node="4" to_port="rotation"> </cnx>
+			<cnx from_node="4" from_port="matrix" to_node="2" to_port="value1"> </cnx>
+			<cnx from_node="1" from_port="out" to_node="2" to_port="value2"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Input"> </item>
+			<group type="input" name="Rotation" collapsed="false">
+				<item type="input" name="Rotation_Enable" min="0" max="0"> </item>
+				<item type="input" name="Rotation_Amplitude_Y" min="0" max="0"> </item>
+				<item type="input" name="Rotation_Amplitude_X" min="0" max="0"> </item>
+				<item type="input" name="Rotation_Amplitude_Z" min="0" max="0"> </item>
+				<item type="input" name="Rotation_Frequency" min="0" max="0"> </item>
+				<item type="input" name="Rotation_Seed" min="0" max="0"> </item>
+			</group>
+			<group type="input" name="Position" collapsed="false">
+				<item type="input" name="Position_Enable" min="0" max="0"> </item>
+				<item type="input" name="Position_Amplitude_X" min="0" max="0"> </item>
+				<item type="input" name="Position_Amplitude_Y" min="0" max="0"> </item>
+				<item type="input" name="Position_Amplitude_Z" min="0" max="0"> </item>
+				<item type="input" name="Position_Frequency" min="0" max="0"> </item>
+				<item type="input" name="Position_Seed" min="0" max="0"> </item>
+			</group>
+			<item type="output" name="Result"> </item>
+		</layout>
+	</definition>
+</xsi_file>

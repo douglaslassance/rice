@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi_file type="CompoundNode" name="Matrix Z Distance" category="Rice" author="Douglas Lassance" url="http://www.douglaslassance.com" formatversion="1.4" compoundversion="1.0" constructionmode="Current" backgroundcolor="6672345">
+	<definition>
+		<nodes>
+			<node type="Matrix Local" version="1.0" index="0">
+				<param name="Input.Input_00" type="4" value="1.000000"></param>
+				<param name="Input.Input_01" type="4" value="0.000000"></param>
+				<param name="Input.Input_02" type="4" value="0.000000"></param>
+				<param name="Input.Input_03" type="4" value="0.000000"></param>
+				<param name="Input.Input_10" type="4" value="0.000000"></param>
+				<param name="Input.Input_11" type="4" value="1.000000"></param>
+				<param name="Input.Input_12" type="4" value="0.000000"></param>
+				<param name="Input.Input_13" type="4" value="0.000000"></param>
+				<param name="Input.Input_20" type="4" value="0.000000"></param>
+				<param name="Input.Input_21" type="4" value="0.000000"></param>
+				<param name="Input.Input_22" type="4" value="1.000000"></param>
+				<param name="Input.Input_23" type="4" value="0.000000"></param>
+				<param name="Input.Input_30" type="4" value="0.000000"></param>
+				<param name="Input.Input_31" type="4" value="0.000000"></param>
+				<param name="Input.Input_32" type="4" value="0.000000"></param>
+				<param name="Input.Input_33" type="4" value="1.000000"></param>
+				<param name="Reference.Reference_00" type="4" value="1.000000"></param>
+				<param name="Reference.Reference_01" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_02" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_03" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_10" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_11" type="4" value="1.000000"></param>
+				<param name="Reference.Reference_12" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_13" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_20" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_21" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_22" type="4" value="1.000000"></param>
+				<param name="Reference.Reference_23" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_30" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_31" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_32" type="4" value="0.000000"></param>
+				<param name="Reference.Reference_33" type="4" value="1.000000"></param>
+				<portdef name="Input" type="256" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<portdef name="Reference" type="256" structure="1" group="-1" instance="-1" port="-1"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">475</prop>
+					<prop name="posy">51</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="MatrixToSRTNode" index="1">
+				<param name="matrix.matrix_00" type="4" value="1.000000"></param>
+				<param name="matrix.matrix_01" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_02" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_03" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_10" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_11" type="4" value="1.000000"></param>
+				<param name="matrix.matrix_12" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_13" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_20" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_21" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_22" type="4" value="1.000000"></param>
+				<param name="matrix.matrix_23" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_30" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_31" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_32" type="4" value="0.000000"></param>
+				<param name="matrix.matrix_33" type="4" value="1.000000"></param>
+				<portdef name="matrix" type="256" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">625</prop>
+					<prop name="posy">3</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="AbsoluteValueNode" index="2">
+				<param name="value" type="4" value="0.000000"></param>
+				<portdef name="value" type="4" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">946</prop>
+					<prop name="posy">3</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+			<node type="3DVectorToScalarNode" index="3">
+				<param name="vector.vector_x" type="4" value="0.000000"></param>
+				<param name="vector.vector_y" type="4" value="0.000000"></param>
+				<param name="vector.vector_z" type="4" value="0.000000"></param>
+				<portdef name="vector" type="16" structure="1" group="0" instance="0" port="0"></portdef>
+				<datablob category="ui_infos">
+					<prop name="posx">767</prop>
+					<prop name="posy">-13</prop>
+					<prop name="state">Normal</prop>
+				</datablob>
+			</node>
+		</nodes>
+		<exposed_ports>
+			<port index="0" portname="Input" username="Target" basename="Target" portlabel="Target" exposetype="single"> </port>
+			<port index="0" portname="Reference" username="Source" basename="Source" portlabel="Source" exposetype="single"> </port>
+			<port index="2" portname="result" username="Result" basename="Result" portlabel="Result" exposetype="single"> </port>
+		</exposed_ports>
+		<connections>
+			<cnx from_node="1" from_port="translation" to_node="3" to_port="vector"> </cnx>
+			<cnx from_node="3" from_port="z" to_node="2" to_port="value"> </cnx>
+			<cnx from_node="0" from_port="Result" to_node="1" to_port="matrix"> </cnx>
+		</connections>
+		<layout>
+			<item type="input" name="Source"> </item>
+			<item type="input" name="Target"> </item>
+			<item type="output" name="Result"> </item>
+		</layout>
+	</definition>
+</xsi_file>
